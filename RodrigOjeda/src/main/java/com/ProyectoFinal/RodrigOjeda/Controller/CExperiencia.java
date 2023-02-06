@@ -2,7 +2,7 @@
 package com.ProyectoFinal.RodrigOjeda.Controller;
 import com.ProyectoFinal.RodrigOjeda.Entity.Experiencia;
 import com.ProyectoFinal.RodrigOjeda.Security.Controller.Mensaje;
-import com.ProyectoFinal.RodrigOjeda.Security.DTO.dtoExperiencia;
+import com.ProyectoFinal.RodrigOjeda.Dto.dtoExperiencia;
 import com.ProyectoFinal.RodrigOjeda.Service.SExperiencia;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;

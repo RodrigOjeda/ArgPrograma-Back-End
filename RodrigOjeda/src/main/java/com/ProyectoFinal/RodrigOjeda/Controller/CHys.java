@@ -2,7 +2,7 @@ package com.ProyectoFinal.RodrigOjeda.Controller;
 
 import com.ProyectoFinal.RodrigOjeda.Entity.hys;
 import com.ProyectoFinal.RodrigOjeda.Security.Controller.Mensaje;
-import com.ProyectoFinal.RodrigOjeda.Security.DTO.dtoHys;
+import com.ProyectoFinal.RodrigOjeda.Dto.dtoHys;
 import com.ProyectoFinal.RodrigOjeda.Service.Shys;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;

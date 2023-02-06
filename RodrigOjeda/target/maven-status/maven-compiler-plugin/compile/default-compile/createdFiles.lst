@@ -1,9 +1,10 @@
 com/ProyectoFinal/RodrigOjeda/Security/Controller/Mensaje.class
 com/ProyectoFinal/RodrigOjeda/Security/DTO/NuevoUsuario.class
-com/ProyectoFinal/RodrigOjeda/Security/DTO/dtoPersona.class
+com/ProyectoFinal/RodrigOjeda/Dto/dtoHys.class
 com/ProyectoFinal/RodrigOjeda/Repository/IPersonaRepository.class
 com/ProyectoFinal/RodrigOjeda/Controller/CExperiencia.class
 com/ProyectoFinal/RodrigOjeda/Security/Repository/iRolRepository.class
+com/ProyectoFinal/RodrigOjeda/Dto/dtoEducacion.class
 com/ProyectoFinal/RodrigOjeda/Repository/REducacion.class
 com/ProyectoFinal/RodrigOjeda/Security/Entity/UsuarioPrincipal.class
 com/ProyectoFinal/RodrigOjeda/Security/DTO/JwtDto.class
@@ -14,10 +15,9 @@ com/ProyectoFinal/RodrigOjeda/Security/Enums/RolNombre.class
 com/ProyectoFinal/RodrigOjeda/Security/jwt/JwtProvider.class
 com/ProyectoFinal/RodrigOjeda/Security/Service/RolService.class
 com/ProyectoFinal/RodrigOjeda/Security/Service/UsuarioService.class
-com/ProyectoFinal/RodrigOjeda/Security/DTO/dtoEducacion.class
-com/ProyectoFinal/RodrigOjeda/Security/DTO/dtoHys.class
 com/ProyectoFinal/RodrigOjeda/Security/Service/Seducacion.class
-com/ProyectoFinal/RodrigOjeda/Security/DTO/dtoExperiencia.class
+com/ProyectoFinal/RodrigOjeda/Dto/dtoExperiencia.class
+com/ProyectoFinal/RodrigOjeda/Dto/dtoPersona.class
 com/ProyectoFinal/RodrigOjeda/Service/SExperiencia.class
 com/ProyectoFinal/RodrigOjeda/Security/jwt/JwtTokenFilter.class
 com/ProyectoFinal/RodrigOjeda/Security/Controller/AuthController.class

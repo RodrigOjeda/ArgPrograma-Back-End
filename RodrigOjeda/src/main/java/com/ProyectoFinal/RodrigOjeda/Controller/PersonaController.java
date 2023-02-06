@@ -3,7 +3,7 @@ package com.ProyectoFinal.RodrigOjeda.Controller;
 
 import com.ProyectoFinal.RodrigOjeda.Entity.Persona;
 import com.ProyectoFinal.RodrigOjeda.Security.Controller.Mensaje;
-import com.ProyectoFinal.RodrigOjeda.Security.DTO.dtoPersona;
+import com.ProyectoFinal.RodrigOjeda.Dto.dtoPersona;
 import com.ProyectoFinal.RodrigOjeda.Service.ImpPersonaService;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
@@ -18,10 +18,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/personas")
 @CrossOrigin(origins = "https://portafolioargprograma.web.app")
 public class PersonaController {
     @Autowired
