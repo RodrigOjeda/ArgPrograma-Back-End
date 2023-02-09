@@ -51,7 +51,7 @@ public class MainSecurity {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
-    @Bean
+    /*@Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
@@ -63,18 +63,17 @@ public class MainSecurity {
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
+    }*/
+    protected void configure(HttpSecurity http) throws Exception {
+        http.cors().and().csrf().disable()
+                .authorizeRequests()
+                .antMatchers("**").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .exceptionHandling().authenticationEntryPoint(jwtEntryPoint)
+                .and()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);           
     }
-   
-    @Bean
-    public CorsFilter corsFilter() {
-        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        final CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        // Don't do this in production, use a proper list  of allowed origins
-        config.setAllowedOrigins(Collections.singletonList("*"));
-        config.setAllowedHeaders(Arrays.asList("Origin", "Content-Type", "Accept"));
-        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "OPTIONS", "DELETE", "PATCH"));
-        source.registerCorsConfiguration("/**", config);
-        return new CorsFilter(source);
-    }
+    
 }
