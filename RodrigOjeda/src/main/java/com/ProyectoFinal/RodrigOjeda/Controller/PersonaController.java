@@ -45,6 +45,11 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
     
+    @PostMapping("/create")
+    public void save(@RequestBody Persona persona){
+        personaService.save(persona);
+    }
+    
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
         if(!personaService.existsById(id)){
@@ -68,4 +73,5 @@ public class PersonaController {
         
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
     }
+    
 }
