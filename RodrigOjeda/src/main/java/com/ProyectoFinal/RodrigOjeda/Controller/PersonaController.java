@@ -46,8 +46,9 @@ public class PersonaController {
     }
     
     @PostMapping("/create")
-    public void save(@RequestBody Persona persona){
+    public String save(@RequestBody Persona persona){
         personaService.save(persona);
+        return "la persona fue creada";
     }
     
     @PutMapping("/update/{id}")

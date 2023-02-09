@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ProyectoFinal.RodrigOjeda.RodrigOjedaApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.214 s - in com.ProyectoFinal.RodrigOjeda.RodrigOjedaApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.005 s - in com.ProyectoFinal.RodrigOjeda.RodrigOjedaApplicationTests
