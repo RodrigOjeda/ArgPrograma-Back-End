@@ -78,6 +78,9 @@ public class Persona {
         this.descripcion = descripcion;
     }
 
+    public Persona() {
+    }
+
     
     
 }
