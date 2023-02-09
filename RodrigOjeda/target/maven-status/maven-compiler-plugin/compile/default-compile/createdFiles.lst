@@ -8,6 +8,7 @@ com/ProyectoFinal/RodrigOjeda/Dto/dtoEducacion.class
 com/ProyectoFinal/RodrigOjeda/Repository/REducacion.class
 com/ProyectoFinal/RodrigOjeda/Security/Entity/UsuarioPrincipal.class
 com/ProyectoFinal/RodrigOjeda/Security/DTO/JwtDto.class
+com/ProyectoFinal/RodrigOjeda/RodrigOjedaApplication$1.class
 com/ProyectoFinal/RodrigOjeda/Entity/Educacion.class
 com/ProyectoFinal/RodrigOjeda/Entity/hys.class
 com/ProyectoFinal/RodrigOjeda/Security/DTO/LoginUsuario.class
